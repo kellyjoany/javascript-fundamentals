@@ -46,6 +46,13 @@ function filter(collection, callback) {
 // The order of the array is preserved.
 // uniq([1,2,1]); → [1,2]
 function uniq(array) {
+  newArr = [];
+  for(let i = 0; i < array.length; i +=1){
+    if(newArr.indexOf(array[i]) === -1){
+      newArr.push(array[i]);
+    }
+  }
+  return newArr;
 }
 
 // Gets the index at which the first occurrence of value is found in array
