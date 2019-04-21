@@ -17,7 +17,7 @@ function forEach(array) {
 
 // Creates an array of values by running each element in collection through callback
 // Should we explain that map returns?
-let Callback = (element, index, array)
+// let Callback = (element, index, array)
 // map([1,2,3], function(element, index, array) {
 //  return element * 3;
 // }); -> [3,6,9]
@@ -26,6 +26,12 @@ function map(array, callback) {
   
 }
 
+-----poderia ser feito assim ------
+function map(array){
+  array.map(function (e){
+      return e * 3;
+  });
+}
 // Iterates over elements of collection, returning an Array of all elements callback returns truthy for.
 // filter([1,2,3,4], function(element, index, collection) {
 //  return element % 2 === 0;
