@@ -2,31 +2,42 @@
 
 // 1. Write a literal object called obj with 3 properties.
 
-// code here
+  let obj = {
+  nome: 'kelly',
+  peso: 54,
+  idade: 29  
+}
 
 // ######################################### //
 
 // 2. Write an array called arrEx2 with length 3.
 
-// code here
+ arrEx2 = [ 0, 1, 2];
 
 // ######################################### //
 
 // 3. Write a loop using for structure that prints all positive numbers until 48 (including 48).
 
-// code here
+for(let i = 0; i <= 48; i+=1){
+  console.log(i);
+}
 
 // ######################################### //
 
 // 4. Write a loop using for structure that prints all negative numbers until -30 (excluding).
 
-// code here
+for(let i = -1; i > -30; i-=1){
+   console.log(i);
+}
 
 // ######################################### //
 
 // 5. Write a loop using for structure that prints all numbers from 102 (including) to 32 (including) in steps of 2.
 
-// code here
+for(let i = 102; i >= 32; i-=2){
+  console.log(i);
+}
+
 
 // ######################################### //
 
@@ -34,7 +45,13 @@
 
 const arrEx6 = [2, 4, 6, 7, 9, 12];
 
-// code here
+function add2(arr){
+  let newArr = [];
+  for(let i = 0; i < arr.length; i+=1 ){
+    newArr.push(arr[i] + 2);
+  }
+  return newArr;
+}
 
 // ######################################### //
 
@@ -43,7 +60,14 @@ const arrEx6 = [2, 4, 6, 7, 9, 12];
 const arrEx7 = [1, 2, 3];
 
 const checkSum = arr => {
-  // code here
+  let sum = 0;
+  for(let i = 0; i < arr.length; i += 1){
+    sum += arr[i];
+  }
+  if(sum % 2 === 0){
+    return even;
+  }
+  return odd;
 };
 
 // ######################################### //
