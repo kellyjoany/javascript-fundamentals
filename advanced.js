@@ -88,3 +88,11 @@ function indexOf(array, value) {
 // },1); → 4
 function reduce(array, callback, start) {
 }
+
+-----poderia ser feito assim ------
+function reduce(array){
+  array.reduce(function (acc, e){
+   return acc + e;
+  });
+}
+
