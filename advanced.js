@@ -42,6 +42,15 @@ function map(array){
 function filter(collection, callback) {
 }
 
+-----poderia ser feito assim ------
+function filter(array){
+  array.filter(function (e){
+      if(e % 2 === 0){
+        return e
+      }
+  });
+}
+
 // Creates an array without duplicate values from the inputted array.
 // The order of the array is preserved.
 // uniq([1,2,1]); → [1,2]
